@@ -2,7 +2,7 @@
 auth router
 POST /auth/register – Create user
 
-POST /auth/login – Login user (returns JWT)
+POST /auth/login – Login user
 
 workouts router
 POST /workouts – Add new workout
@@ -11,7 +11,7 @@ GET /workouts – Get user’s workouts
 
 DELETE /workouts/:id – Delete a workout
 
-posts router (optional stretch)
+posts router (stretch)
 POST /posts – Create new post
 
 GET /posts – View all community posts
