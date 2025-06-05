@@ -1,57 +1,73 @@
-`auth router`
-`POST /auth/register` - Create user
-`POST /auth/login` - Login user
+📦 API Structure
+auth router
+POST /auth/register – Create user
 
-`workouts router`
-`POST /workouts` - Add workout
-`GET /wourkouts` - Get users workouts
-`PUT /workouts/:id` - Edit workout
-`DELETE /workouts/:id` - Delete workout
+POST /auth/login – Login user (returns JWT)
 
-`goals router`
-`POST /goals` - Create new goal
-`GET /goals` - Get users goals
-`PUT /goals/:id` - update goal
+workouts router
+POST /workouts – Add new workout
 
-**Core Features**
--users can make fitness goals
--users can post on a community page
--users can see past workouts
--users can log workouts
+GET /workouts – Get user’s workouts
 
-**Stretch goals**
--users can comment on post's in the forum
--users can add/follow
--users can post video content of workouts
+DELETE /workouts/:id – Delete a workout
 
-**what needs to be done**
+posts router (optional stretch)
+POST /posts – Create new post
 
-**Phase 1 - Backend + Auth + Frontend**
+GET /posts – View all community posts
 
-✅ Set up database schema + seed data
+//
 
-✅ Build auth routes (/register, /login)
+🧩 Phase 1: Auth + Basic Setup
+✅ Backend: build /register & /login with JWT
 
-✅ Set up React frontend with login/register pages
+✅ Frontend: login/register pages in React
 
-✅ Store JWT and protect dashboard route
+✅ Store JWT in localStorage
 
-**Phase 2 - Workouts + Goals + Dashboard**
+✅ Protect dashboard route with auth check
 
-✅ CRUD for workouts
+//
 
-✅ CRUD for goals
+🏋🏽‍♂️ Phase 2: Workout Logging
+✅ Users can log workouts (title, desc, date)
 
-✅ Build dashboard page to show workouts/goals
+✅ Users can view/delete workouts
 
-✅ Create forms for logging workouts and setting goals
+✅ Dashboard shows past workouts
 
-**Phase 3 - Community + Profile**
+✅ Simple form for creating new workouts
 
-✅ Add community post feed (basic text posts)
+✅ Seed sample workouts for demo/testing
 
-✅ Profile page for user info + past activity
+//
 
-✅ Client-side validation + error handling
+🗣️ Stretch Phase Community Feed
+⏳ Add basic post feed (no comments)
 
-✅ Style everything using CSS
+⏳ Submit text-based posts (React form)
+
+⏳ Show username + timestamp on each post
+
+//
+
+🎨 Final Polish
+✅ Apply basic CSS styling
+
+✅ Form validation (no empty inputs)
+
+✅ Show errors for failed login/register
+
+✅ Core Features
+Users can log workouts
+
+Users can view + delete past workouts
+
+//
+
+💡 Stretch Goals
+Add comments to posts
+
+Follow other users
+
+Upload videos or link workout content
